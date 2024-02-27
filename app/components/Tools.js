@@ -1,7 +1,6 @@
 import React from 'react'
 import { IoLogoJavascript, IoLogoReact, IoLogoPython } from 'react-icons/io5'
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
-import { TbBrandDjango } from 'react-icons/tb'
 import ToolCard from './ToolCard'
 
 const tools =[
@@ -15,11 +14,7 @@ const tools =[
     icon: <IoLogoPython/>,
     description: 'I build robust backend systems with Python, leveraging its versatility and simplicity.'
   },
-  {
-    name: 'Django',
-    icon: <TbBrandDjango/>,
-    description: 'I build robust backend systems with Python, leveraging its versatility and simplicity.'
-  },
+  
   {
     name: 'React',
     icon: <IoLogoReact />,
@@ -39,12 +34,12 @@ const tools =[
 
 const Tools = () => {
   return (
-    <div className='font-dm text-neutral-50 px-14 py-10 bg-[#141819]'>
+    <div className='font-dm text-neutral-50 px-7 md:px-14 py-10 bg-[#141819]'>
       <div>
-        <h1 className='text-[2.75rem] tracking-wide'>Tools I&apos;m proficient with</h1>
+        <h1 className='text-[2.5rem] tracking-wide'>Tools I&apos;m proficient with</h1>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6'>
         {
           tools.map((tool, index) => (
             <div key={index}>

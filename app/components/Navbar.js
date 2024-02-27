@@ -10,7 +10,7 @@ const Navbar = () => {
         const changeNavbarColor = () => {
             if (window.scrollY >= 10) {
                 setBackgroundColor('#141819')
-                setBoxShadow('0 0 10px rgba(0, 0, 0, 0.1)')
+                setBoxShadow('0 0 10px rgba(0, 0, 0, 0.4)')
             } else {
                 setBackgroundColor('')
                 setBoxShadow('')
