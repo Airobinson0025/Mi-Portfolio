@@ -10,7 +10,7 @@ const Navbar = () => {
         const changeNavbarColor = () => {
             if (window.scrollY >= 10) {
                 setBackgroundColor('#141819')
-                setBoxShadow('0 0 10px rgba(0, 0, 0, 0.4)')
+                setBoxShadow('0 0 10px rgba(0, 0, 0, 0.1)')
             } else {
                 setBackgroundColor('')
                 setBoxShadow('')
@@ -27,7 +27,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <div style={{ backgroundColor: backgroundColor, boxShadow: boxShadow }} className='flex items-center justify-between fixed w-full p-3 font-dm text-neutral-50 transition duration-200'>
+        <div style={{ backgroundColor: backgroundColor, boxShadow: boxShadow }} className='flex items-center justify-between fixed w-full p-2 font-dm text-neutral-50 transition duration-200'>
             <div>
                 <h1 className='text-[1.5rem] font-'>Hello there.</h1>
             </div>
@@ -35,13 +35,13 @@ const Navbar = () => {
             <nav className='hidden md:inline'>
                 <ul className='flex items-center space-x-6 text-[1.25rem]'>
                     <li className=' hover:text-lime-300 transition duration-200'>
+                        <Link href='#skills'>Skills</Link>
+                    </li>
+                    <li className=' hover:text-lime-300 transition duration-200'>
                         <Link href='#tools'>Tools</Link>
                     </li>
                     <li className=' hover:text-lime-300 transition duration-200'>
                         <Link href='#projects'>Projects</Link>
-                    </li>
-                    <li className=' hover:text-lime-300 transition duration-200'>
-                        <Link href='#samples'>Samples</Link>
                     </li>
                     <li className=' hover:text-lime-300 transition duration-200'>
                         <Link href='#blog'>Blog</Link>
